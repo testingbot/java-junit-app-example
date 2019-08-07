@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/testingbot/java-junit-app-example.svg?branch=master)](https://travis-ci.org/testingbot/java-junit-example)
+[![Build Status](https://travis-ci.org/testingbot/java-junit-app-example.svg?branch=master)](https://travis-ci.org/testingbot/java-junit-app-example)
 
 ## TestingBot - Java & JUnit
 
