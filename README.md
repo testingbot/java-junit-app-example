@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/testingbot/java-junit-app-example.svg?branch=master)](https://travis-ci.org/testingbot/java-junit-app-example)
-
 ## TestingBot - Java & JUnit
 
 TestingBot provides a grid of browsers and mobile devices to run Automated tests.
@@ -24,6 +22,6 @@ This example demonstrates how to use Java with JUnit to run a test on a Real Mob
 You will see the test result in the [TestingBot Dashboard](https://testingbot.com/members/)
 
 ### Resources
-##### [TestingBot Documentation](https://testingbot.com/support/getting-started/appium.html)
+##### [TestingBot Documentation](https://testingbot.com/support/mobile/java.html)
 
-##### [Appium Documentation](http://appium.io/)
+##### [Appium Documentation](https://appium.io/)

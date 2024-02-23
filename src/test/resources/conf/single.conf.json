@@ -4,14 +4,16 @@
   "secret": "TESTINGBOT_SECRET",
 
   "capabilities": {
-    "build": "junit-testingbot",
-    "name": "single_test"
+    "tb:options": {
+      "build": "testng-testingbot",
+      "name": "single_appium_test",
+    },
+    "appium:app": "https://testingbot.com/appium/sample.apk"
   },
 
   "environments": [{
-    "app": "https://testingbot.com/appium/sample.apk",
     "platformName": "Android",
-    "version": "9.0",
-    "deviceName": "Galaxy S10"
+    "deviceName": "Galaxy .*",
+    "realDevice": true
   }]
 }

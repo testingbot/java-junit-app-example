@@ -1,7 +1,0 @@
-language: java
-
-jdk:
-  - openjdk8
-
-scripts:
-  - mvn test -P single

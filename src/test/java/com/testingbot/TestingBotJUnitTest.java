@@ -69,11 +69,9 @@ public class TestingBotJUnitTest {
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
             if(capabilities.getCapability(pair.getKey().toString()) == null){
-                capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
+                capabilities.setCapability(pair.getKey().toString(), pair.getValue());
             }
         }
-
-        capabilities.setCapability("realDevice", true);
 
         String key = System.getenv("TB_KEY");
         if (key == null) {
@@ -85,7 +83,12 @@ public class TestingBotJUnitTest {
             secret = (String) config.get("secret");
         }
 
-        driver = new AndroidDriver(new URL("http://"+key+":"+secret+"@"+config.get("server")+"/wd/hub"), capabilities);
+        String app = System.getenv("TESTINGBOT_APP_ID");
+        if (app != null && !app.isEmpty()) {
+          capabilities.setCapability("appium:app", app);
+        }
+
+        driver = new AndroidDriver(new URL("https://"+key+":"+secret+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
 
     @After
